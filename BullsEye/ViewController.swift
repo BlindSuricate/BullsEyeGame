@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         print("Try to clone and understand how its work")
+        
+        print("Merge Dev Into Master")
     }
 }
 
