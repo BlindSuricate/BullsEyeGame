@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         print("Merge Dev Into Master")
         
         print("I do some change in Dev, and go to master branch")
+        
+        print("now i try to merge it all in master!")
     }
 }
 
