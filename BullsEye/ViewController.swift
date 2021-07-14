@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         print("I do some change in Dev, and go to master branch")
         
-        print("now i try to merge it all in master!")
+        print("now i try to merge it all in master!") 
     }
 }
 
