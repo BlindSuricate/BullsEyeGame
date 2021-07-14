@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="landscape">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -127,6 +125,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ITY-ZE-ZVd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZwW-iO-1MC"/>
@@ -136,7 +135,6 @@
                             <constraint firstItem="RmA-rv-4JI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qui-wD-g1E"/>
                             <constraint firstItem="ITY-ZE-ZVd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wjP-7V-j5t"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="randomNumberLabel" destination="BTb-8d-vXf" id="8G9-Oa-zO3"/>
@@ -160,8 +158,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="0aJ-hY-92Z">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNB-9B-Nfk">
-                                <rect key="frame" x="398" y="336" width="100" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNB-9B-Nfk">
+                                <rect key="frame" x="398" y="88" width="100" height="285"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Close" backgroundImage="Button-Normal">
@@ -173,29 +171,28 @@
                                     <action selector="close" destination="Z0M-vI-EO5" eventType="touchUpInside" id="dfe-jY-3lQ"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUX-1z-Yfh">
-                                <rect key="frame" x="64" y="20" width="768" height="308"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It is about VC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bT7-wk-EQg">
+                                <rect key="frame" x="44" y="0.0" width="808" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="hgY-3F-pvn"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bT7-wk-EQg" firstAttribute="leading" secondItem="hgY-3F-pvn" secondAttribute="leading" id="6TW-gG-1MP"/>
                             <constraint firstAttribute="trailing" secondItem="0aJ-hY-92Z" secondAttribute="trailing" id="6cB-rM-gbz"/>
+                            <constraint firstItem="hgY-3F-pvn" firstAttribute="trailing" secondItem="bT7-wk-EQg" secondAttribute="trailing" id="EI1-of-ZfW"/>
                             <constraint firstAttribute="bottom" secondItem="0aJ-hY-92Z" secondAttribute="bottom" id="Fnq-fs-iyr"/>
                             <constraint firstItem="kNB-9B-Nfk" firstAttribute="centerX" secondItem="0Gt-24-qF6" secondAttribute="centerX" id="JZp-RF-Or3"/>
-                            <constraint firstItem="BUX-1z-Yfh" firstAttribute="top" secondItem="hgY-3F-pvn" secondAttribute="top" constant="20" id="PPj-Ga-gQN"/>
-                            <constraint firstItem="kNB-9B-Nfk" firstAttribute="top" secondItem="BUX-1z-Yfh" secondAttribute="bottom" constant="8" id="XbM-1i-h33"/>
+                            <constraint firstItem="bT7-wk-EQg" firstAttribute="top" secondItem="hgY-3F-pvn" secondAttribute="top" id="QKO-XK-Nk4"/>
+                            <constraint firstItem="kNB-9B-Nfk" firstAttribute="top" secondItem="bT7-wk-EQg" secondAttribute="bottom" constant="16" id="Ynv-Iw-dpM"/>
                             <constraint firstItem="0aJ-hY-92Z" firstAttribute="top" secondItem="0Gt-24-qF6" secondAttribute="top" id="ac7-4b-al5"/>
-                            <constraint firstItem="hgY-3F-pvn" firstAttribute="trailing" secondItem="BUX-1z-Yfh" secondAttribute="trailing" constant="20" id="baX-P6-P9q"/>
-                            <constraint firstItem="BUX-1z-Yfh" firstAttribute="leading" secondItem="hgY-3F-pvn" secondAttribute="leading" constant="20" id="bcu-fB-d77"/>
                             <constraint firstItem="0aJ-hY-92Z" firstAttribute="leading" secondItem="0Gt-24-qF6" secondAttribute="leading" id="pnd-Zg-uCz"/>
                             <constraint firstItem="hgY-3F-pvn" firstAttribute="bottom" secondItem="kNB-9B-Nfk" secondAttribute="bottom" constant="20" id="tRN-LL-Uz1"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="hgY-3F-pvn"/>
                     </view>
-                    <connections>
-                        <outlet property="webView" destination="BUX-1z-Yfh" id="lve-f1-bhv"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZv-Tx-8Fl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

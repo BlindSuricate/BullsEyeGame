@@ -16,7 +16,5 @@ class ViewController: UIViewController {
         
         print("Try to clone and understand how its work")
     }
-
-
 }
 
