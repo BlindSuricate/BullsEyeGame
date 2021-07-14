@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         print("Try to clone and understand how its work")
         
         print("Merge Dev Into Master")
+        
+        print("I do some change in Dev, and go to master branch")
     }
 }
 
