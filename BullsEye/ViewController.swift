@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         print("Try to clone and understand how its work")
         
         print("Change somethings in Dev branch!")
+        
+        print("And change it again")
     }
 }
 
